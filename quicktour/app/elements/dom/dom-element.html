@@ -1,0 +1,22 @@
+<link rel='import' href='../../../bower_components/polymer/polymer.html'>
+<!--
+    Add local DOM
+    Many elements include some internal DOM nodes to implement the element’s UI and behavior.
+    Polymer calls this local DOM, and it provides an easy way to specify it:
+ -->
+<dom-module id='dom-element'>
+
+  <template>
+    <p>
+        I'm a DOM element. This is my local DOM element there are many like
+        it but this one is mine!
+    </p>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'dom-element'
+    });
+  </script>
+
+</dom-module>

@@ -1,0 +1,35 @@
+<link rel='import' href='../../../bower_components/polymer/polymer.html'>
+
+<!-- basic polymer element looks like this -->
+<polymer-element id='basic-element'>
+  <template>
+    <style>
+      /* CSS rules for your element */
+    </style>
+    <!-- local DOM for your element -->
+    <div layout horizontal center center-justified>
+        <!-- data bindings in local DOM -->
+        <div>
+            {{greeting}}, this is the Holy Grail of layouts.
+        </div>
+    </div>
+  </template>
+
+  <script>
+    // element registration
+    Polymer({
+      is: 'basic-element',
+
+      // add properties and methods on the element's prototype
+
+      properties: {
+        // declare properties for the element's public API
+        greeting: {
+          type: String,
+          value: 'Hello!'
+        }
+      }
+    });
+  </script>
+
+</dom-module>
